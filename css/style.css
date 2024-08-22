@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Indie+Flower&family=Montserrat:wght@500&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playwrite+ES+Deco&family=Poppins:wght@800&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+   
+  }
+nav{
+    display: flex;
+    width: 84%;
+    padding: 20px 0;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 20px;
+    
+}
+
+nav ul li a:hover{
+  color:#ffa726;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    margin: 15px;
+    color:#7e57c2;
+   font-weight:700;
+
+}
+
+
+body {
+    background-color: black;
+}
+
+.inicial{
+    top:500px;
+}
+
+.button {
+    background-color: #ffbd59;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px
+  }
+  
+  .button :hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+
+
+
+
+
+
+
+
+
