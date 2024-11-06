@@ -8,6 +8,43 @@
    
   }
 
+  
+
+  nav{
+    display: flex;
+    width: 84%;
+    padding: 20px 0;
+    align-items: center;
+    justify-content:space-between;
+     }
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 20px;
+    
+}
+
+nav ul li a:hover{
+  color:#ffa726;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: 15px;
+    color:#7e57c2;
+   font-weight:700;
+
+}
+
+.navbar a:hover{
+  color: #9671d6;
+}
+
+
   body{
     background-color: black;
 
@@ -37,3 +74,8 @@
     float: right;
     
   }
+
+  .img3{
+    float:none;
+    margin-left:0px;
+    justify-content: flex-start;}

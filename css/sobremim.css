@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Indie+Flower&family=Montserrat:wght@500&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playwrite+ES+Deco&family=Poppins:wght@800&display=swap');
 
-  *{
+* {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  
   font-style: normal;
-   
    }
 
+
+body{
+    background-color:black;
+}
+
+    
+    
 
   nav{
     display: flex;
@@ -44,34 +49,24 @@ nav ul li a:hover{
 }
 
 
-body {
-    background-color: black;
-}
 
-.inicial{
-    top:500px;
-}
 
-.button {
-    background-color: #ffbd59;
-    border: none;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 12px;
-    margin-left: 70px;
-    margin-top: -70px;
-  }
 
-.button a:hover{
-  background-color: #ffa726;
- }
+.selfie{
+  float: right;
   
+}
 
 h1{
-  color: #ffa726;
+  color:#7e57c2;
+  font-weight: 900;
 }
- 
+
+
+h3{
+  color: white;
+}
+
+.bio{
+  
+}
