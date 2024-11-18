@@ -7,14 +7,7 @@
    }
 
 
-body{
-    background-color:black;
-}
-
-    
-    
-
-  nav{
+   nav{
     display: flex;
     width: 84%;
     padding: 20px 0;
@@ -48,25 +41,108 @@ nav ul li a:hover{
   color: #9671d6;
 }
 
-
-
-
-
-.selfie{
-  float: right;
-  
-}
-
 h1{
   color:#7e57c2;
-  font-weight: 900;
-}
-
-
-h3{
-  color: white;
 }
 
 .bio{
-  
+  text-align: center;
+
 }
+
+body{
+    background-color:black;
+    color:aliceblue;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 9%;
+}
+
+.timeline .timeline-row{
+  display: flex;
+  column-gap: 64px;
+  flex-wrap: wrap;
+}
+
+.timeline-row .timeline-column{
+  flex: 1 1 320px;
+}
+
+.timeline-column .title{
+  position: relative;
+  display: inline-block;
+  font-size: 28px;
+  margin: 32px 0 16px 30px;
+}
+
+.timeline-column .timeline-box{
+   position: relative;
+  border-left: 2px solid #ffa726;
+}
+
+.timeline-box .timeline-content{
+  position: relative;
+  padding-left: 27px;
+}
+
+.timeline-box .timeline-content::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10.5px;
+  width: 20px;
+  height: 20px;
+  background: #ffa726;
+  border-radius: 50%;
+}
+
+.timeline-content .content{
+  padding: 24px;
+  border: 2px solid #ffa726;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.timeline-content .content .year {
+  font-size: 16px;
+  color:#9671d6;
+}
+
+.timeline-content .content .year i{
+  margin-right: 8px;
+}
+
+.timeline-content .content h3{
+  font-size: 19px;
+  margin: 8px 0;
+}
+
+.timeline-content .content p{
+  font-size: 16px;
+}
+
+.animate{
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 105%;
+  height: 100%;
+  background: black;
+  animation: show-right 1s ease forwards;
+  animation-delay: calc(.5s * var(--i));
+}
+
+@keyframes show-right{
+  100%{
+    width: 0;
+  }
+}
+
+    
+    
+
