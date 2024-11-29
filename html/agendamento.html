@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/agendamento.css">
-    <link rel="website icon" type="png" href="/img/logo.png">
+        <link rel="website icon" type="png" href="/img/logo.png">
 
     <link rel="stylesheet" href="/img/">
 
@@ -76,9 +76,11 @@
                 try {
                     // Envia os dados para o FormSubmit
                     const response = await fetch("https://formsubmit.co/mariavitoriafarias131@gmail.com", {
-                        method: "POST",
-                        body: formData,
-                    });
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(Object.fromEntries(formData)),
+                });
+
         
                     if (response.ok) {
                         // Mostra mensagem de sucesso
@@ -94,7 +96,6 @@
                 }
             });
         </script>
-        
 
 
 
