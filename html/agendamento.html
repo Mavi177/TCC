@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/agendamento.css">
+    <link rel="website icon" type="png" href="/img/logo.png">
+
     <link rel="stylesheet" href="/img/">
 
     <title>Landing page</title>
@@ -40,30 +42,59 @@
 
 
     <body>
-
         <section class="form-container">
             <div class="container">
-                <form action="https://formsubmit.co/mariavitoriafarias131@gmail.com" method="POST">
-
+                <form id="contactForm" method="POST">
+        
                     <h1>Entre em contato</h1>
                     <p>Preencha o formulário abaixo e entraremos em contato com você</p>
                     <div class="input-single">
                         <input type="text" name="nome" id="nome-box" class="input" autocomplete="off" placeholder="Digite seu nome" required>
-
                     </div>
                     <div class="input-single">
-                        <input type="text" name="email" id="email-box" class="input" autocomplete="off" placeholder="Email" required>
-
+                        <input type="email" name="email" id="email-box" class="input" autocomplete="off" placeholder="Email" required>
                     </div>
                     <div class="input-single">
                         <input type="text" name="telefone" id="tel-box" class="input" autocomplete="off" placeholder="Telefone" required>
-
                     </div>
-
-                    <div class="btn"><input type="submit" value="Enviar"></div>
+                    <div class="btn">
+                        <input type="submit" value="Enviar">
+                    </div>
                 </form>
+                <p id="responseMessage" style="display:none; color: green; margin-top: 10px;">Formulário enviado com sucesso!</p>
             </div>
         </section>
+        
+        <script>
+            // Adiciona evento ao formulário
+            document.getElementById("contactForm").addEventListener("submit", async function (event) {
+                event.preventDefault(); // Impede o redirecionamento padrão
+        
+                const form = event.target; // Captura o formulário
+                const formData = new FormData(form); // Obtém os dados do formulário
+        
+                try {
+                    // Envia os dados para o FormSubmit
+                    const response = await fetch("https://formsubmit.co/mariavitoriafarias131@gmail.com", {
+                        method: "POST",
+                        body: formData,
+                    });
+        
+                    if (response.ok) {
+                        // Mostra mensagem de sucesso
+                        document.getElementById("responseMessage").style.display = "block";
+                        document.getElementById("responseMessage").textContent = "Formulário enviado com sucesso!";
+                        form.reset(); // Limpa o formulário
+                    } else {
+                        throw new Error("Erro ao enviar o formulário.");
+                    }
+                } catch (error) {
+                    // Exibe mensagem de erro
+                    alert("Ocorreu um erro ao enviar o formulário: " + error.message);
+                }
+            });
+        </script>
+        
 
 
 
