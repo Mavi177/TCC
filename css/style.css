@@ -3,15 +3,15 @@
   *{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  
   font-style: normal;
    
    }
 
 
+
   nav{
     display: flex;
-    width: 84%;
+    width: 90%;
     padding: 20px 0;
     align-items: center;
     justify-content:space-between;
@@ -45,7 +45,9 @@ nav ul li a:hover{
 
 
 body {
-    background-color: black;
+ 
+  background-color: black;
+ 
 }
 
 .inicial{
@@ -75,78 +77,38 @@ h1{
   color: #ffa726;
 }
 
-body{
-    
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background:rgb(0, 0, 0)6;
-  background-size: 4vh 4vh;
 
-}
 
-h2{
-  display: inline-blockk;
-  color:#fff;
-  font-size: 4em;
-  font-weight: 600;
-  padding: 0 100px;
-}
+/*.msg {
+  display: block;
+  color: #ffe605;
+  font-size: 1.5rem;
+  font-weight: 700;
 
-h2 span{
-  position: relative;
-  color: transparent;
-  -webkit-text-stroke: 1px #e23ab8;
-  line-height: 1.2em;
-  padding: 5px 10px;
-  animation: displayText 12s infinite;
-  animation-delay: calc(-3s * var(--i));
-}
-
-@keyframes displayText
-{
-  0%
-  {
-      display: inline-block;
-  }
-
-  25%,100%
-  {
-      display: none;
-  }
-}
-
-h2 span::before
-{
-  content: attr(data-text);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: 0;
-  height: 100%;
-  color: #e23ab8;
-  overflow:hidden;
+  border-right: 4px solid #ffbd59; 
   white-space: nowrap;
-  border-right:2px solid #e23ab8;
-  box-sizing: border-box;
-  border-radius: 10px;
-  padding: 5px 10px;
-  animation: animate 3s linear infinite;
-  filter: drop-shadow(0 0 5px #e23ab8) drop-shadow(
-  0 0 25px #e23ab8);
+  overflow: hidden;
+  width: 0; 
+  
+  animation: mark 0.5s step-end infinite, write 10s steps(100, end) forwards;
 }
 
-@keyframes animate{
-
-  0%, 10%, 100%
-  {
-      width: 0;
-  }
-
-  70%,90%
-  {
-      width: 100%;
+@keyframes mark {
+  50% {
+    border-right-color: transparent; 
   }
 }
- 
+
+@keyframes write {
+  0% {
+    width: 0; 
+  }
+  100% {
+    width: 130ch; 
+  }
+    /* HTML
+    <div class="container">
+     <div class="msg" id="typingMessage">  Em 68,7% dos casos, o abuso acontece no ambiente residencial, geralmente cometido por pessoas próximas​ (FUNDAÇÃO ABRINQ) (UNICEF)</div>
+    </div>
+    /*
+}/*

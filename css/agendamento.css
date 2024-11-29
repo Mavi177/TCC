@@ -3,15 +3,17 @@
   *{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  
   font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
    
-   }
+  }
 
 
   nav{
     display: flex;
-    width: 84%;
+    width: 90%;
     padding: 20px 0;
     align-items: center;
     justify-content:space-between;
@@ -44,7 +46,121 @@ nav ul li a:hover{
 }
 
 
-body {
-    background-color: black;
+ body {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/fundo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+
 }
+
+h2{
+  color: #ffa726;
+
+}
+
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+form{
+  background-color: #fff;
+  max-width: 500px;
+  height: 450px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.form-container{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 100px;
+}
+
+form h1{
+  text-align: center;
+  font-size: 30px;
+  color:#ffa726;
+}
+
+form p{
+  text-align:center;
+  margin: 20px 0;
+}
+
+
+.input-single {
+  position: relative; /* Para posicionar o label dentro do container */
+  margin: 20px 0;
+}
+
+.input-single label{
+  position: absolute;
+  left:0;
+  bottom: 5px;
+}
+
+.input{
+  width: 100%;
+  border:0;
+  border-bottom: 2px solid #ccc;
+  padding: 5px;
+  font-size: 17px;
+  outline: 0;
+}
+
+form .input-single .input:focus ~ label
+{
+  transform: translateY(-20px);
+  font-size:12px;
+  color: #7e57c2;
+}
+
+.input-single label {
+  position: absolute; /* Mantém o rótulo dentro do container */
+  left: 10px; /* Ajuste horizontal */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Corrige a posição do centro vertical */
+  background-color: #fff; /* Para evitar sobreposição com o input */
+  padding: 0 5px; /* Um pequeno espaço ao redor do texto */
+  font-size: 14px; /* Ajuste o tamanho do texto do label */
+  pointer-events: none; /* Impede que o rótulo interfira no clique */
+  transition: all 0.2s;
+  cursor: text;
+}
+
+.btn{
+  width: 100%;
+  text-align: center;
+}
+
+.input-single input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+form input[type=submit]{
+  padding: 10px 40px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #7e57c2;
+  color: black;
+  cursor:pointer;
+}
+
+
+
+
+
 

@@ -2,38 +2,477 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/img/">
-  <title>Landing page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/e-book.css">
+    <link rel="stylesheet" href="/img/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive Footer</title>
 
+    <style>
+        /* Faz a imagem se ajustar ao tamanho da tela */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
 
+        /* Remove margens do corpo */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
+
 <body>
+    <section id="home">
+        <nav>
+            <img src="/img/logo.png" alt="">
 
-  <section id="home">
-    <nav>
-      <img src="/img/logo.png" alt="">
+            <ul class="navbar">
+                <a href="/index.html">
+                    <li>Home </li>
+                </a>
+                <a href="/html/abordagem.html">
+                    <li>Abordagem</li>
+                </a>
+                <a href="/html/serviços.html">
+                    <li>Serviços</li>
+                </a>
+                <a href="/html/sobremim.html">
+                    <li>Sobre mim</li>
+                </a>
+                <a href="/html/agendamento.html">
+                    <li>Agendamento</li>
+                </a>
+                <a href="/html/e-book.html">
+                    <li>E-BOOK</li>
+                </a>
 
-      <ul class="navbar">
-        <a href="/index.html">
-          <li>Home </li>
-        </a>
-        <a href="/html/abordagem.html">
-          <li>Abordagem</li>
-        </a>
-        <a href="/html/serviços.html">
-          <li>Serviços</li>
-        </a>
-        <a href="/html/sobremim.html">
-          <li>Sobre mim</li>
-        </a>
-        <a href="/html/agendamento.html"><li>Agendamento</li></a>
 
-        <a href="/html/e-book.html"><li>E-BOOK</li></a>
-        
-      </ul>
-    </nav>
+            </ul>
+        </nav>
+
+
+        <img src="/img/18demaio3.png" alt="Imagem Responsiva">
+
+
+        <div>
+            <a href="#">
+                <l class="bx bxsearch"></i>
+            </a>
+            <a href="#">
+                <l class="bx bx-user"></i>
+            </a>
+            <a href="#">
+                <l class="bx bx-bxcart"></i>
+            </a>
+        </div>
+
+        <div clss="bx bx-menu" id="menu-icon"></div>
+
+        </header>
+
+
+        <section class="main-home">
+            <div class="main-text">
+                <h5>Livros voltados tanto para adultos quanto para crianças, com o objetivo de facilitar a compreensão
+                    do tema e colocar os ensinamentos em prática. </h5>
+                <h1> </h1>
+                <p> </p>
+
+
+                <div class="down-arrow">
+                    <a href="#trending" class="down">
+                        <i class="bx bx-down-arrow-alt"></i>
+                    </a>
+                </div>
+
+        </section>
+
+        <section class="trending-products" id="trending">
+            <div class="center-text">
+
+            </div>
+
+            <div class="products">
+                <div class="row" onclik="window.location.href='sproduct.html';">
+                    <img src="/img/livro1.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                    </div>
+
+                    <div class="price">
+                        <h4>Abuso Sexual Infantil (Prevenção, Identificação e Intervenção)<br> Abner Morillas</h4>
+                        <p>R$35,00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="/img/livro2.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                    </div>
+
+                    <div class="price">
+                        <h4>Violência Intrafamiliar ( O abuso sexual contra Crianças e Adolescentes)<br> Maria
+                            Natividade S. Rodrigues</h4>
+                        <p>R$40,00</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <img src="/img/livro3.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half '></i>
+                    </div>
+
+                    <div class="price">
+                        <h4>Desmascarando o Abuso ( Um guia bíblico para ajudar as vítimas)<br> Darby A.Strickland</h4>
+                        <p>R$35,00</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <img src="/img/livro4.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                    </div>
+
+                    <div class="price">
+                        <h4> Abuso sexual na Infância e redes de apoio social <br> Karla Cristina K. Buccieri & Adriano
+                            Valério Dos Santos Azevedo</h4>
+                        <p>R$35,00</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <img src="/img/livro5.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                    </div>
+
+                    <div class="price">
+                        <h4> Do que estamos falando quando falamos de ESTUPRO <br> Sohaila Abdulali</h4>
+                        <p>R$40,00</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <img src="/img/livro6.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                    </div>
+
+                    <div class="price">
+                        <h4> Pipo e Fifi (Ensinando proteção contra violência sexual)<br> Caroline Arcari</h4>
+                        <p>R$15,00</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <img src="/img/livro7.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                    </div>
+
+                    <div class="price">
+                        <h4>Carinho não pode ser segredo <br> Rita Silva </h4>
+                        <p>R$35,00</p>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <img src="/img/livro8.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                    </div>
+
+                    <div class="price">
+                        <h4>Meu corpo Meu corpinho!</h4>
+                        <p>R$25,00</p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <img src="/img/livro9.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                    </div>
+
+                    <div class="price">
+                        <h4>Fifi e Popo para bebês <br> Caroline Arcari </h4>
+                        <p>R$25,00</p>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <img src="/img/livro10.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                    </div>
+
+                    <div class="price">
+                        <h4>Se não é carinho nem proteção, pode ser... <br> Raquel S. Netto Bittencourt</h4>
+                        <p>R$25,00</p>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <img src="/img/par1.png" alt="">
+                    <div class="product-text">
+                        <h5>sale</h5>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+
+                    <div class="ratting">
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star-half'></i>
+                    </div>
+
+                    <div class="price">
+                        <h4>Minhas partes íntimas ( Uma história para explicar sexualidade às crianças)<br> Claudia
+                            Jiménez & Carolina Reyes</h4>
+                        <p>R$20,00</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+        </section>
+
+        <div class="numeros">
+            <section id="pagination" classe="trending-products">
+                <a href="#">1</a>
+                <a href="#">2<a>
+                 a href="#"><i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+
+    </section>
+
+
+    <script src="javascript.js"></script>
+
 </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Lembrete:</h1>
+            <p>You're not what you feel <br> (Você não é o que sente)
+            </p>
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Blog</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Tech</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Adventures</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Music</a>
+            </li>
+        </ul>
+        <ul class="footer-list">
+            <li>
+                <h3>Products</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">App</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Desktop</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Cloud</a>
+            </li>
+        </ul>
+        <div id="footer_subscribe">
+            <h3>Subscribe</h3>
+            <p>
+                Enter your email to be notified about new books
+            </p>
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="footer_copyright">
+        &#169
+        2024 all rights reserved
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>
