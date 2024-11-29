@@ -451,3 +451,62 @@ h5{
     }
 }
 
+#input_group {
+  color: white;
+  display: flex;
+  flex-direction: column; /* Organiza os itens verticalmente */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+}
+
+#input_group input,
+#input_group button,
+#input_group li a,
+#input_group li span {
+  color: white;
+  margin-left: -15rem;
+}
+
+#input_group a {
+  text-decoration: none;
+}
+
+#input_group a:hover {
+  color: #f0f0f0;
+}
+
+#input_group i {
+  margin-top: -3rem;
+  margin-left: -2rem;
+  font-size: 30px; /* Tamanho do ícone */
+  color: white; /* Cor do ícone */
+  background-color: #7f37c9; /* Cor de fundo do ícone */
+  padding: 10px; /* Ajuste o padding para controlar o tamanho do fundo */
+  border-radius: 50%; /* Torna o fundo arredondado */
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+  display: inline-flex; /* Garante que o ícone se comporte como um item de linha */
+  justify-content: center; /* Centraliza o ícone dentro do fundo */
+  align-items: center; /* Centraliza o ícone verticalmente */
+}
+
+#input_group li {
+  list-style: none; /* Remove o marcador da lista */
+  display: flex;
+  align-items: center; /* Alinha o texto verticalmente ao centro */
+}
+
+#input_group li span {
+  margin-left: 0rem;
+  margin-top: -6rem;
+  font-weight: bold; /* Deixa o texto "Email:" mais destacado */
+}
+
+#input_group li a {
+  margin-top: -6rem;
+  color: white; /* Cor do link */
+  text-decoration: none;
+  margin-left: 10px; /* Espaço entre o texto "Email:" e o link */
+}
+
+#input_group li a:hover {
+  color: #f0f0f0; /* Cor ao passar o mouse */
+}
